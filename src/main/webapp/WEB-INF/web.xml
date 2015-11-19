@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+            http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+
+	<filter>
+		<filter-name>DepartmentFilter</filter-name>
+		<filter-class>com.mycompany.employeesAndDepartments.controller.DataFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>DepartmentFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Department</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.DepartmentListController</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddDepartment</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.DepartmentAddController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteDepartment</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.DepartmentDeleteController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateDepartment</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.DepartmentUpdateController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Employee</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.EmployeeListController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddEmployee</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.EmployeeAddController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.EmployeeDeleteController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<servlet-class>com.mycompany.employeesAndDepartments.controller.EmployeeUpdateController</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Department</servlet-name>
+		<url-pattern>/department</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddDepartment</servlet-name>
+		<url-pattern>/addDepartment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteDepartment</servlet-name>
+		<url-pattern>/deleteDepartment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateDepartment</servlet-name>
+		<url-pattern>/updateDepartment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Employee</servlet-name>
+		<url-pattern>/listEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddEmployee</servlet-name>
+		<url-pattern>/addEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteEmployee</servlet-name>
+		<url-pattern>/deleteEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateEmployee</servlet-name>
+		<url-pattern>/updateEmployee</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
+        
+        
+        

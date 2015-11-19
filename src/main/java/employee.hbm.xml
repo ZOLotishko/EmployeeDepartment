@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.mycompany.employeesAndDepartments.entity.Employees"
+		table="employees">
+
+		<id name="id" column="employees_id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property name="first_name" column="first_name" type="java.lang.String" />
+		<property name="last_name" column="last_name" type="java.lang.String" />
+		<property name="mail" column="mail" type="java.lang.String" />
+		<property name="position" column="position" type="java.lang.String" />
+		<property name="salary" column="salary" type="java.lang.Integer" />
+		<property name="dat" column="date" type="java.lang.Date" />
+		<property name="departments_id" column="departments_id" type="java.lang.Integer" />
+	</class>
+</hibernate-mapping>

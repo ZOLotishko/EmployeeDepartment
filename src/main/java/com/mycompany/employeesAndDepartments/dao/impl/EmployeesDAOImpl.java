@@ -67,7 +67,6 @@ public class EmployeesDAOImpl implements EmployeesDAO{
 					employee.setPosition(resultSet.getString("position"));
 					employee.setSalary(resultSet.getInt("salary"));
 					employee.setDat(resultSet.getDate("date"));
-//					employee.setDepartments_id(resultSet.getInt("departments_id"));
 					employees.add(employee);
 				}
 			}
@@ -119,7 +118,6 @@ public class EmployeesDAOImpl implements EmployeesDAO{
 		String sql = "INSERT into employees (first_name, last_name, mail, position, salary, date, departments_id ) VALUES (?,?,?,?,?,?,?)";
 		try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
 
-			//			preparedStatement.setInt(1, employee.getId());
 			preparedStatement.setString(1, employee.getFirst_name());
 			preparedStatement.setString(2, employee.getLast_name());
 			preparedStatement.setString(3, employee.getMail());
@@ -147,7 +145,6 @@ public class EmployeesDAOImpl implements EmployeesDAO{
 			preparedStatement.setString(4, employee.getPosition());
 			preparedStatement.setInt(5, employee.getSalary());
 			preparedStatement.setDate(6, employee.getDat());
-			//			preparedStatement.setDate(6, employee.getDate());
 			preparedStatement.executeQuery();
 
 

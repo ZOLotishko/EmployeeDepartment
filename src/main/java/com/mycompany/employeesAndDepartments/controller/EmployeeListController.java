@@ -17,12 +17,12 @@ public class EmployeeListController extends HttpServlet{
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
 		EmployeesDAOImpl daoImpl = new EmployeesDAOImpl();
-		String id_id = request.getParameter("departments_id");
-		int id = Integer.parseInt(id_id);
+		String d_id = request.getParameter("departments_id");
+		int id = Integer.parseInt(d_id);
 		
 		List<Employees> emp = daoImpl.readEmployeeByIDDepartment(id);
 		
-		request.setAttribute("departments_id", id_id);
+		request.setAttribute("departments_id", d_id);
 		request.setAttribute("emp", emp);
 		request.getRequestDispatcher("/jsp/listEmployee.jsp").forward(request, response);
 	}

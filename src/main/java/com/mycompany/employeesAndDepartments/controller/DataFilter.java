@@ -19,7 +19,6 @@ public class DataFilter implements Filter{
     public void init(FilterConfig filterConfig) throws ServletException {
     	encoding = filterConfig.getInitParameter("requestEncoding");
     	if( encoding == null) encoding = "UTF-8";
-//    	if( encoding==null ) encoding="Cp1251";
     }
  
     @Override
@@ -31,13 +30,3 @@ public class DataFilter implements Filter{
     public void destroy() {}
 }
 
-//
-//<filter>
-//<filter-name>DepartmentFilter</filter-name>
-//<filter-class>com.mycompany.employeesAndDepartments.servlet.DataFilter</filter-class>
-//</filter>
-//
-//<filter-mapping>
-//<filter-name>DepartmentFilter</filter-name>
-//<url-pattern>/*</url-pattern>
-//</filter-mapping>

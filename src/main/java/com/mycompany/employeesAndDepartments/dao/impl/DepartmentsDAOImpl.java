@@ -115,7 +115,6 @@ public class DepartmentsDAOImpl implements DepartmentsDAO{
 		ResultSet resultSet = null;
 		try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
 			preparedStatement.setString(1, name);
-//			preparedStatement.setInt(2, id);
 			resultSet = preparedStatement.executeQuery();
 
 			while(resultSet.next()){

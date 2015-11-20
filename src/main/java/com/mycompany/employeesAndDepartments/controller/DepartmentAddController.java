@@ -22,8 +22,6 @@ public class DepartmentAddController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		//    	request.setCharacterEncoding("Cp1251");
-
 		int id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name");
 		String specification = request.getParameter("specification");
@@ -43,7 +41,6 @@ public class DepartmentAddController extends HttpServlet {
 			department.setName(name);
 			department.setSpecification(specification);
 			DepartmentsDAOImpl departmentsDAOImpl = new DepartmentsDAOImpl();
-			//                DepartmentService departmentService = new DepartmentServiceImpl();
 			departmentsDAOImpl.createDepartment(department);
 			response.sendRedirect("/employeesAndDepartments/department");
 		}

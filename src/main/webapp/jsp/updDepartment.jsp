@@ -6,7 +6,9 @@
 
 <head>
 <title>Department Update Page</title>
-
+<style>
+   <%@include file='style.css' %>
+</style>
 </head>
 <body>
 	<form method="POST" name='formDepartment' action="update">

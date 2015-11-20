@@ -26,15 +26,7 @@ public class EmployeeValidate implements Validate{
                     "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" +
                     "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
  
-//    public EmailValidator() {
-//        pattern = Pattern.compile(EMAIL_PATTERN);
-//    }
- 
-//    public boolean validate(final String hex) {
-//        matcher = pattern.matcher(hex);
-// 
-//        return matcher.matches();
-//    }
+
 	
 
 	public EmployeeValidate(String first_name, String last_name, String email, String position, String salary, String date){

@@ -27,7 +27,6 @@ public class EmployeeAddController extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 		EmployeesDAOImpl daoImpl = new EmployeesDAOImpl();
 		
-//		int id = Integer.parseInt(request.getParameter("employees_id"));
 		String first_name = request.getParameter("first_name");
 		String last_name = request.getParameter("last_name");
 		String email = request.getParameter("mail");

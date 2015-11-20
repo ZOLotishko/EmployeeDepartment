@@ -3,7 +3,9 @@
 <html>
 <head>
 <title>New Department</title>
-
+<style>
+   <%@include file='style.css' %>
+</style>
 </head>
 
 <body>

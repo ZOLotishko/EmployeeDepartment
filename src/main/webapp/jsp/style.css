@@ -1,0 +1,32 @@
+root { 
+    display: block;    
+}
+body{
+    background: lavenderblush;
+    
+    color: black;
+}
+
+h1, h2, h3 {
+	color: crimson;
+}
+span.error{
+	color: red;
+}
+a{
+	color: green;
+	text-decoration: none;
+}
+a:HOVER{
+	color: red;
+}
+  
+table, tr, td{
+    border-radius: 3px;
+    border:solid 1px burlywood;
+    padding: 3px;    
+    width: max-content;
+    background-color: bisque;
+ 
+}
+ 

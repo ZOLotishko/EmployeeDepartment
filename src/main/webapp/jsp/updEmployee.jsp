@@ -3,7 +3,9 @@
 <html>
 <head>
 <title></title>
-
+<style>
+   <%@include file='style.css' %>
+</style>
 </head>
 <body >
 <center>

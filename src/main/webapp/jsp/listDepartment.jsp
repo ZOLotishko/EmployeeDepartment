@@ -3,7 +3,9 @@
 <html>
 <head>
 <title></title>
-
+<style>
+   <%@include file='style.css' %>
+</style>
 </head>
 <body>
 	<h1 align="center">Список депортаментов</h1>

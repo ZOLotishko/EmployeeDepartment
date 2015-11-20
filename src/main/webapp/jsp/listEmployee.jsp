@@ -3,11 +3,13 @@
 <html>
 <head>
 <title></title>
-
+<style>
+   <%@include file='style.css' %>
+</style>
 </head>
 <body>
 	<h1>List Employee</h1>
-	<h2>Department: <c:out value="${id}"/></h2>
+	<h2>Department: <c:out value="${departments_id}"/></h2>
 	<table border="1">
 		<thead>
 			<tr>
@@ -34,7 +36,7 @@
 					<td><c:out value="${emp.position}" /></td>
 					<td><c:out value="${emp.salary}"></c:out>
 					<td><c:out value="${emp.dat}" /></td>
-					<td><c:out value="${emp.departments_id}" /></td>
+					<td><c:out value="${departments_id}" /></td>
 					<td>
 						<form method="POST" action="/employeesAndDepartments/deleteEmployee">
 							<input type="submit" name="deleteForm" value="Delete Employee"> <input type="hidden" name="delete" value="${emp.employees_id}">

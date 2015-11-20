@@ -18,7 +18,6 @@ public class DepartmentListController extends HttpServlet{
 	    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 	        	DepartmentsDAOImpl departmentService = new DepartmentsDAOImpl();
-//	            DepartmentService departmentService = new DepartmentServiceImpl();
 	            List<Departments> dep = departmentService.readDepartments();
 	            req.setAttribute("dep", dep);
 	            req.getRequestDispatcher("/jsp/listDepartment.jsp").forward(req, resp);

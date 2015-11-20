@@ -27,7 +27,7 @@ public class HomeServlet extends HttpServlet{
 	public void doGet( HttpServletRequest req , HttpServletResponse pos){
 		req.setAttribute( "date" ,dateFormat.format(currentDate) );
 		try {
-			getServletContext().getRequestDispatcher("/home.jsp").forward(req, pos);
+			getServletContext().getRequestDispatcher("/jsp/home.jsp").forward(req, pos);
 		} catch (ServletException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
